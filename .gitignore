@@ -41,4 +41,4 @@ next-env.d.ts
 package-lock-old.json
 .firebaserc
 firebase.json
-.firebase/dipassio-audits/functions
+./firebase/dipassio-audits/functions
