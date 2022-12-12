@@ -127,7 +127,7 @@ textarea {
     display: flex;
     place-content: center;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex;
     flex: 0 0 auto;
     flex-flow: row nowrap;
     gap: 12px;
@@ -298,7 +298,7 @@ textarea {
 
 .output-header h3 {
     font-family: "Manrope", serif;
-    font-size: 28px;
+    font-size: 58px;
     font-style: normal;
     font-weight: 800;
     letter-spacing: 0px;

@@ -49,14 +49,10 @@ const Home = () => {
         </div>
       </div>
       <div className="prompt-container">
-        <div style={{ color: "#FFF" }}>Paste your solidity code below and our AI tool will give you</div>
-        <div style={{ color: "#FFF" }}>the list of vulnerabilities & consequences.</div>
-        <div style={{ color: "#FFF" }}> <h1>Note:</h1></div>
-        <div style={{ color: "#FFF" }}>🪲 Generate a few times to make sure you find all the bugs 🪲 </div>
-        <div style={{ color: "#FFF" }}><h1>Disclaimer:</h1></div>
-        <div style={{ color: "#FFF" }}>💀 This tool is in beta and should not be a source of actual auditing. Use at own risk 💀</div>
+        <div style={{ color: "#FFF" , align: "center"}}>Paste your Solidity Code below and our AI tool will give you</div>
+        <div style={{ color: "#FFF" }}> The List of Vulnerabilities & Consequences.</div>
         <textarea
-          placeholder="start typing here"
+          placeholder="Start typing here"
           className="prompt-box"
           value={userInput}
           onChange={onUserChangedText}
@@ -71,6 +67,24 @@ const Home = () => {
             </div>
           </a>
         </div>
+        <div style={{ color: "#FFF" }}> <h1>Note:</h1></div>
+        <div style={{ color: "#FFF" }}>🪲 Generate a few times to make sure you find all the bugs 🪲 </div>
+        <div style={{ color: "#FFF" }}><h1>Disclaimer:</h1></div>
+        <div style={{ color: "#FFF" }}>💀 This tool is in beta and should not be a source of actual auditing. Use at own risk 💀</div>
+        <div className="header-title" style={{ color: "#FFF" }}>
+            <div><h2>For Full Solidity Smart Contracts Audits</h2></div>
+          </div>
+        <div className="header-title" style={{ color: "#FFF" }}>
+            <div><h2>Web3 Developments</h2></div>
+          </div>  
+        <div className="header-title" style={{ color: "#FFF" }}>
+            <div><h2>Dipassio is Open for Enquiries:</h2></div>
+          </div>
+        <div className="header-title" style={{ color: "#FFF" }}>
+            <div><h2>hello@dipass.io</h2></div>
+          </div>
+
+
         {apiOutput && (
           <div className="output">
             <div className="output-header-container">
