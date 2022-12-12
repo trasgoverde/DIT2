@@ -80,7 +80,7 @@ const Home = () => {
         <div className="header-title" style={{ color: "#FFF" }}>
             <div><h2>Dipassio is Open for Enquiries:</h2></div>
           </div>
-        <div className="header-title" style={{ color: "#FFF" }}>
+        <div className="header-title" style={{ color: "#FFF", padding: "10px", marginBottom: "60px" }}>
             <div><h2>hello@dipass.io</h2></div>
           </div>
 
