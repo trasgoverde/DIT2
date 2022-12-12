@@ -1,8 +1,9 @@
 
 # Smart Contract Auditor
 
-AI powered solidity smart contracts audits
-Beta use at your own risks 
+AI powered Solidity Smart Contracts Audits
+Beta Version 
+Use at Your Own Risks 
 
 ## Installation
 
