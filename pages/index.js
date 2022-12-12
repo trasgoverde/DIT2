@@ -38,7 +38,7 @@ const Home = () => {
       <div className="container">
         <div className="header">
         <div className="header-subtitle">
-           <h1>By DIPASS.IO</h1>
+           <h1>DIPASS.IO</h1>
           </div>
           <div className="header-title">
             <h1>Solidity Smart Contracts Audits</h1>
