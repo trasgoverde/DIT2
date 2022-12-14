@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&family=IBM+Plex+Sans+Condensed:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=IBM+Plex+Serifital@0;1&display=swap');
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Ibm Plex Mono', sans-serif;
 }
 
 .root {
     display: flex;
     place-content: center flex-start;
     align-items: center;
-    background-color: rgb(42, 42, 42);
+    background-color: #506485;
     flex-flow: column nowrap;
     gap: 10px;
     height: 100vh;
@@ -114,7 +115,7 @@ body {
 }
 
 textarea {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Ibm Plex Mono', sans-serif;
 }
 
 
@@ -171,8 +172,8 @@ textarea {
 
 .generate-button {
     place-content: flex-start;
-    align-items: flex-start;
-    background-color: rgb(255, 79, 18);
+    align-items: flex;
+    background-color: rgb(255, 18, 129);
     border-radius: 100px;
     display: flex;
     flex: 0 0 auto;
@@ -321,9 +322,9 @@ textarea {
 }
 
 .output-content p {
-    text-align: center;
+    text-align: justify;
     white-space: pre-line;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgb(255, 255, 255);
 }
 
 @media (min-width: 810px) and (max-width: 1199px) {
