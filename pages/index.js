@@ -37,8 +37,10 @@ const Home = () => {
       </Head>
       <div className="container">
         <div className="header">
-        <div className="header-subtitle">
-           <h1>DIPASS.IO</h1>
+        <div className="header-subtitle" >
+           <a href="https://www.dipass.io" style={{ color: "#FFF" }} >
+           <h1>DIPASS.IO</h1> 
+           </a>
           </div>
           <div className="header-title">
             <h1>Solidity Smart Contracts Audits</h1>
@@ -52,7 +54,7 @@ const Home = () => {
         <div style={{ color: "#FFF" , align: "center"}}>Paste your Solidity Code below and our AI tool will give you</div>
         <div style={{ color: "#FFF" }}> The List of Vulnerabilities & Consequences.</div>
         <textarea
-          placeholder="Start typing here"
+          placeholder="Start typing here..."
           className="prompt-box"
           value={userInput}
           onChange={onUserChangedText}
@@ -67,6 +69,18 @@ const Home = () => {
             </div>
           </a>
         </div>
+        {apiOutput && (
+          <div className="output">
+            <div className="output-header-container">
+              <div className="output-header" style={{ color: "#FFF" }}>
+                <h1>Results</h1>
+              </div>
+            </div>
+            <div className="output-content" style={{ backgroundColor: "#ff4f12", padding: "10px", marginBottom: "40px" }}>
+              {apiOutput}
+            </div>
+          </div>
+        )}
         <div style={{ color: "#FFF" }}> <h1>Note:</h1></div>
         <div style={{ color: "#FFF" }}>🪲 Generate a few times to make sure you find all the bugs 🪲 </div>
         <div style={{ color: "#FFF" }}><h1>Disclaimer:</h1></div>
@@ -81,22 +95,13 @@ const Home = () => {
             <div><h2>Dipassio is Open for Enquiries:</h2></div>
           </div>
         <div className="header-title" style={{ color: "#FFF", padding: "10px", marginBottom: "60px" }}>
+            <a href="mailto:hello@dipass.io" style={{ color: "#ccc" }} >
             <div><h2>hello@dipass.io</h2></div>
+            </a>
           </div>
 
 
-        {apiOutput && (
-          <div className="output">
-            <div className="output-header-container">
-              <div className="output-header">
-                <h3>Output</h3>
-              </div>
-            </div>
-            <div className="output-content" style={{ backgroundColor: "#BADA55", padding: "10px", marginBottom: "40px" }}>
-              {apiOutput}
-            </div>
-          </div>
-        )}
+
       </div>
     </div>
   );
